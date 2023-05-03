@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <!--<a href="#">Women_Bible.Study</a>-->
+            </header>
+
+            <!--
+                Conflicts with background image...
+                <h1><span>1 Peter 2:2</span></h1>
+
+            <p>And be as nursing infants, and yearn for the word as for pure and spiritual milk by which you shall grow strong for life</p>
+            -->
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="search">Search for content:</label>
+                        <input type="text" name="search" id="search">
+                        <!--<p>Example: "sandy_sue@gmail.com"</p>-->
+                    </div>
+
+                    <input type="button" value="Search now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Welcome To Women's Bible Study</h2>
+            <p>The purpose of this Bible Study is to lift one another up, correct, and stick to Biblical truths. There are many false teachers around teaching what they think is Biblically sound and turning 
+                others away from the word of God. Our goal is to read, understand and obey the word of God. Let us all learn together through loving correction!
+            </p>
+        </div>
+        <img src="images/twotimothy.png" alt="2 Timothy 3:16 scripture">
+    </section>
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+       
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+</body>
+</html>
